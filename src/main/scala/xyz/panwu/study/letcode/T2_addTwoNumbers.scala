@@ -17,6 +17,21 @@ package xyz.panwu.study.letcode
  */
 object T2_addTwoNumbers {
 
+  /**
+   * 我第一次实现的时候，考虑的是将两个数还原出来，但是这里会涉及到大数的问题，超过long
+   *    2 | 4 | 3 | null
+   *  + 5 | 6 | 4 | null
+   *  ----------------------
+   *  = 7 | 0 | 8 | null
+   *
+   *  按照小学生计算加法的方式计算，然后控制进位进位
+   *  如果要方向数据，只需要在构建链表时完成
+   *
+   *  这是一个倾向传统计算的方式，一点不scala
+   * @param l1
+   * @param l2
+   * @return
+   */
   def addTwoNumbers(l1: ListNode, l2: ListNode): ListNode = {
     var carry = 0
     var l1Pre = l1
