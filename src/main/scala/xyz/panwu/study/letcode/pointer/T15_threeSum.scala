@@ -1,4 +1,4 @@
-package xyz.panwu.study.letcode
+package xyz.panwu.study.letcode.pointer
 
 import scala.collection.mutable
 
